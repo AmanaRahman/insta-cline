@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_application_5/screens/homescreen.dart';
-import 'package:flutter_application_5/screens/searchs.dart';
-import 'package:flutter_application_5/screens/reels.dart';
 import 'package:flutter_application_5/screens/likes.dart';
 import 'package:flutter_application_5/screens/profile.dart';
+import 'package:flutter_application_5/screens/reels.dart';
+import 'package:flutter_application_5/search.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
@@ -16,22 +17,17 @@ class _MainScreenState extends State<MainScreen> {
   int _selectedIndex = 0;
 
   static List<Widget> _widgetOptions = <Widget>[
-    // LoginScreen(),
-    HomeScreen(),
-    Search(),
+HomeScreen(),
+    SearchScreen(),
     ReelsScreen(),
     LikeScreen(),
     ProfileScreen(),
   ];
 
   void _onItemTapped(int index) {
-    print('$index');
-    print("Tapped on item: $index");
-    if (index != _selectedIndex) {
-      setState(() {
-        _selectedIndex = index;
-      });
-    }
+    setState(() {
+      _selectedIndex = index;
+    });
   }
 
   @override
@@ -44,33 +40,26 @@ class _MainScreenState extends State<MainScreen> {
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: '',
-            backgroundColor: Colors.black,
-          ),
+              icon: Icon(Icons.home), label: '', backgroundColor: Colors.black),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search_outlined),
-            label: '',
-            backgroundColor: Colors.black,
-          ),
+              icon: Icon(Icons.search_outlined),
+              label: '',
+              backgroundColor: Colors.black),
           BottomNavigationBarItem(
-            icon: Icon(Icons.smart_display_outlined),
-            label: '',
-            backgroundColor: Colors.black,
-          ),
+              icon: Icon(Icons.smart_display_outlined),
+              label: '',
+              backgroundColor: Colors.black),
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_giftcard_outlined),
-            label: '',
-            backgroundColor: Colors.black,
-          ),
+              icon: Icon(Icons.card_giftcard_outlined),
+              label: '',
+              backgroundColor: Colors.black),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: '',
-            backgroundColor: Colors.black,
-          ),
+              icon: Icon(Icons.person),
+              label: '',
+              backgroundColor: Colors.black),
         ],
         backgroundColor: Colors.black,
-        unselectedItemColor: const Color.fromARGB(255, 116, 114, 114),
+        unselectedItemColor: Colors.white,
         showUnselectedLabels: true,
         iconSize: 30,
         currentIndex: _selectedIndex,

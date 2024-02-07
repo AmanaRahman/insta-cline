@@ -1,17 +1,23 @@
 import 'package:flutter/material.dart';
 
-class PostCart extends StatelessWidget {
+class PostCart extends StatefulWidget {
   final Key? key;
 
   const PostCart({this.key});
 
   @override
+  State<PostCart> createState() => _PostCartState();
+}
+
+class _PostCartState extends State<PostCart> {
+  int currentPageIndex = 0;
+  @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 1,
+      itemCount: 3,
       itemBuilder: (context, index) {
         return Column(
-          crossAxisAlignment: CrossAxisAlignment.start, // Align children to the start
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ListTile(
               leading: Container(
@@ -44,18 +50,19 @@ class PostCart extends StatelessWidget {
             ),
             Container(
               height: 300,
-              child: PageView(
-                children: [
-                  Image.asset(
-                    'assets/lion.jpeg',
+              child: PageView.builder(
+                itemCount: 2,
+                itemBuilder: (context, PageIndex) {
+                  return Image.asset(
+                    PageIndex == 0 ? 'assets/girl.jpg' : 'assets/lion.jpeg',
                     fit: BoxFit.cover,
-                  ),
-                  Image.asset(
-                    'assets/flower.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                  // Add more images as needed
-                ],
+                  );
+                },
+                onPageChanged: (int index) {
+                  setState(() {
+                    currentPageIndex = index;
+                  });
+                },
               ),
             ),
             Row(
@@ -93,16 +100,21 @@ class PostCart extends StatelessWidget {
                   width: 63,
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(10.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Image.asset(
-                        "assets/ovals.png",
-                        width: 24,
-                        height: 24,
-                      ),
-                    ],
+                    children: List.generate(
+                        2,
+                        (index) => Container(
+                              margin: EdgeInsets.only(left: 4),
+                              width: 6,
+                              height: 6,
+                              decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: index == currentPageIndex
+                                      ? Colors.blue
+                                      : Colors.white),
+                            )),
                   ),
                 ),
                 SizedBox(

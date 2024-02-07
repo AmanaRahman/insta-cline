@@ -3,13 +3,15 @@ import 'package:flutter/material.dart';
 class Story extends StatelessWidget {
   List<dynamic> story = [
     {"images": 'assets/lion.jpeg', "username": "lion"},
-    {"images": 'assets/lion.jpeg', "username": "cat"},
-    {"images": 'assets/lion.jpeg', "username": "dog"},
-    {"images": 'assets/lion.jpeg', "username": "hash"},
-    {"images": 'assets/lion.jpeg', "username": "lion"},
-    {"images": 'assets/lion.jpeg', "username": "cat"},
-    {"images": 'assets/lion.jpeg', "username": "dog"},
-    {"images": 'assets/lion.jpeg', "username": "hash"},
+    {"images": 'assets/gurl.jpg', "username": "ammu"},
+    {"images": 'assets/tree.jpg', "username": "liyas"},
+    {"images": 'assets/two.jpg', "username": "asan"},
+    {"images": 'assets/rain.jpg', "username": "niya"},
+    {"images": 'assets/gurl.jpg', "username": "ammu"},
+    {"images": 'assets/tree.jpg', "username": "liyas"},
+    {"images": 'assets/two.jpg', "username": "asan"},
+    {"images": 'assets/rain.jpg', "username": "niya"},
+    
   ];
 
   Story({Key? key}) : super(key: key);

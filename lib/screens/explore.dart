@@ -15,141 +15,142 @@ class Explore extends StatelessWidget {
               padding:EdgeInsets.zero,
               children: [
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/girl.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/tree.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/water.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/rain.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                     child: Image.asset(
                     'assets/peak.jpg',
                     fit: BoxFit.cover,
                   ),                ),
                    Card(
-                    margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/girl.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/tree.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/water.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/rain.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                     child: Image.asset(
                     'assets/peak.jpg',
                     fit: BoxFit.cover,
                   ),                ),
                    Card(
-                    margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/girl.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/tree.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/water.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/rain.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                     child: Image.asset(
                     'assets/peak.jpg',
                     fit: BoxFit.cover,
                   ),                ),
                  Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/girl.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/tree.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/water.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                   child: Image.asset(
                     'assets/rain.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
                 Card(
-                  margin: EdgeInsets.zero,
+                  margin: EdgeInsets.all(1.0),
                     child: Image.asset(
                     'assets/peak.jpg',
                     fit: BoxFit.cover,
-                  ),                ),
+                  ),               
+                   ),
               ],
             ),
           ),
